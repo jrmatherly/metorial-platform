@@ -22,9 +22,9 @@
   },
   "engines": {
     "node": ">=18",
-    "bun": ">=1.2.15"
+    "bun": ">=1.3.0"
   },
-  "packageManager": "bun@1.2.15",
+  "packageManager": "bun@1.3.8",
   "workspaces": [
     "_clients/metorial-node/*/*",
     "clients/metorial-dashboard",
