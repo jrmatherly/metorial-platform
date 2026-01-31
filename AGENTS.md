@@ -20,6 +20,7 @@ bun run prisma:push       # Push schema changes
 ## Structure
 
 | Directory | Purpose |
+
 |-----------|---------|
 | `src/backend/` | API server and business logic |
 | `src/frontend/` | React dashboard |
