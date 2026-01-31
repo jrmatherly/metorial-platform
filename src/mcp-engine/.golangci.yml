@@ -1,0 +1,43 @@
+# golangci-lint configuration for mcp-engine
+# Gradually tighten these rules as technical debt is addressed
+# https://golangci-lint.run/usage/configuration/
+
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+
+linters:
+  # Start with a reasonable set for existing codebase
+  # Add stricter linters as issues are resolved
+  enable:
+    - govet
+    - staticcheck
+    - ineffassign
+    - typecheck
+    - unused
+    - gosimple
+  disable:
+    # Temporarily disabled until existing issues are addressed
+    # TODO: Enable errcheck and fix all unchecked errors (50+ instances)
+    - errcheck
+
+linters-settings:
+  staticcheck:
+    checks:
+      - all
+      # Disable specific checks causing issues in existing code
+      - "-SA9003"  # Empty branch
+
+issues:
+  # Maximum issues count per linter
+  max-issues-per-linter: 50
+  max-same-issues: 10
+
+  # Exclude generated code directories
+  exclude-dirs:
+    - vendor
+    - pkg/proto-mcp-manager
+
+  exclude-files:
+    - ".*\\.pb\\.go$"
+    - ".*_generated\\.go$"
