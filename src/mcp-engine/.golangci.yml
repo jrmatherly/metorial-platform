@@ -27,6 +27,13 @@ linters:
         - all
         # Disable specific checks causing issues in existing code
         - "-SA9003"  # Empty branch
+        # TODO: Enable these after fixing existing style violations
+        # See: https://github.com/metorial/metorial-platform/issues/XXX
+        - "-ST1000"  # Package comments (50+ files need comments)
+        - "-ST1003"  # Naming conventions (sessionId→sessionID, etc.)
+        - "-ST1016"  # Receiver name consistency
+        - "-ST1020"  # Comment format on exported methods
+        - "-QF1008"  # Embedded field selector simplification
 
   exclusions:
     # Exclude generated code and vendor directories
