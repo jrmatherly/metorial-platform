@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-31T17:56:15.360Z",
+  "generatedAt": "2026-01-31T19:18:05.216Z",
   "health": {
     "score": 28,
     "trend": "stable",
@@ -65,8 +65,8 @@
     "riskLevel": "low"
   },
   "lastScan": {
-    "timestamp": "2026-01-31T17:56:15.351Z",
-    "duration": 2124,
+    "timestamp": "2026-01-31T19:18:05.210Z",
+    "duration": 1562,
     "filesScanned": 125,
     "patternsFound": 230,
     "errors": 0

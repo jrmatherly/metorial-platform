@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-01-31T17:56:15.366Z",
+  "generatedAt": "2026-01-31T19:18:05.220Z",
   "projectRoot": "/Users/jason/dev/new-ai/metorial/metorial-platform/src/mcp-engine",
   "stats": {
     "patterns": {
@@ -64,15 +64,15 @@
   },
   "fileHashes": {},
   "lastScan": {
-    "timestamp": "2026-01-31T17:56:15.351Z",
-    "duration": 2124,
+    "timestamp": "2026-01-31T19:18:05.210Z",
+    "duration": 1562,
     "filesScanned": 125,
     "patternsFound": 230,
     "errors": 0
   },
   "views": {
     "status": {
-      "generatedAt": "2026-01-31T17:56:15.364Z",
+      "generatedAt": "2026-01-31T19:18:05.220Z",
       "stale": true,
       "invalidatedBy": [
         "pattern stats updated",
@@ -81,14 +81,14 @@
       ]
     },
     "patternIndex": {
-      "generatedAt": "2026-01-31T17:56:15.365Z",
+      "generatedAt": "2026-01-31T19:18:05.220Z",
       "stale": true,
       "invalidatedBy": [
         "pattern stats updated"
       ]
     },
     "securitySummary": {
-      "generatedAt": "2026-01-31T17:56:15.364Z",
+      "generatedAt": "2026-01-31T19:18:05.220Z",
       "stale": true,
       "invalidatedBy": [
         "security stats updated"
