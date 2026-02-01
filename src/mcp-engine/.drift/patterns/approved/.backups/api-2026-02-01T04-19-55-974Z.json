@@ -1,0 +1,601 @@
+{
+  "version": "1.0.0",
+  "category": "api",
+  "patterns": [
+    {
+      "id": "b2400e43b997cdd7",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/format-standard"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 102,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 190,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 102,
+          "column": 3,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 160,
+          "column": 5,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1312,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1384,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3251,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3445,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3552,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3722,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3813,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3962,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4131,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4292,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4468,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4617,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4786,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4971,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5855,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5891,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6091,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6127,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6245,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6281,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6869,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6905,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 721,
+          "column": 35,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 737,
+          "column": 37,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 273,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 345,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 568,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 615,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 188,
+          "column": 32,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 273,
+          "column": 3,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 345,
+          "column": 5,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1342,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1378,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1445,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1525,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1622,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1658,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 165,
+          "column": 39,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 183,
+          "column": 40,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1375,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1411,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1478,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1558,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1655,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1691,
+          "column": 5,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 109,
+          "column": 39,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 127,
+          "column": 40,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.168Z",
+        "lastSeen": "2026-02-01T04:19:54.639Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-02-01T04:19:54.639Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "916fac4a94e140d1",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/envelope-structure"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 102,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 913,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 273,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 242,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 186,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 190,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/workerBroker.ts",
+          "line": 137,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.169Z",
+        "lastSeen": "2026-02-01T04:19:54.655Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-02-01T04:19:54.655Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5515d9cf3f80cab2",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/format-custom"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 913,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 273,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 242,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 186,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "ts-proto-gen/workerBroker.ts",
+          "line": 137,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.169Z",
+        "lastSeen": "2026-02-01T04:19:54.670Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-02-01T04:19:54.670Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "40ca46f37d683b06",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-offset"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5159,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.169Z",
+        "lastSeen": "2026-02-01T04:19:54.685Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-02-01T04:19:54.685Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-01T04:19:55.955Z",
+  "checksum": "d7c0a355dceb3993"
+}

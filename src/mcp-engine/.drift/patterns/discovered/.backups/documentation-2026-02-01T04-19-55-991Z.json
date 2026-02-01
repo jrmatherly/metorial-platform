@@ -1,0 +1,155 @@
+{
+  "version": "1.0.0",
+  "category": "documentation",
+  "patterns": [
+    {
+      "id": "d13ff1ee330b394a",
+      "subcategory": "jsdoc-patterns",
+      "name": "JSDoc Patterns Detector",
+      "description": "Learns JSDoc documentation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/jsdoc-patterns",
+          "patternId": "documentation/jsdoc-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7161538461538461,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 249,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7161538461538461
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 255,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7161538461538461
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 261,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7161538461538461
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 267,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7161538461538461
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.170Z",
+        "lastSeen": "2026-01-31T19:18:05.170Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "jsdoc-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "546d7d0409065509",
+      "subcategory": "jsdoc-patterns",
+      "name": "JSDoc Patterns Detector",
+      "description": "Learns JSDoc documentation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/jsdoc-patterns",
+          "patternId": "documentation/jsdoc-patterns/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1846,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1859,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 1864,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1878,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1879,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1880,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 1881,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.170Z",
+        "lastSeen": "2026-01-31T19:18:05.170Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "jsdoc-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-01T04:19:55.973Z",
+  "checksum": "ce4da23969392ed7"
+}

@@ -1,0 +1,1923 @@
+{
+  "version": "1.0.0",
+  "category": "logging",
+  "patterns": [
+    {
+      "id": "dbf95037189b867d",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.64,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8464705882352941,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".golangci.yml",
+          "line": 26,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 549,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3042,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3098,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3115,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3115,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3115,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3131,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3131,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3144,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3144,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1016,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1016,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1074,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1074,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7566,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7572,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7572,
+          "column": 71,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7575,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7575,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7840,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7840,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7840,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 563,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 581,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 654,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3255,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3556,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4790,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 67,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 139,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 190,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.167Z",
+        "lastSeen": "2026-01-31T19:18:05.167Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "84067416b25c11b8",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8464705882352941,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".golangci.yml",
+          "line": 28,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3056,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3130,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 75,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 89,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.167Z",
+        "lastSeen": "2026-01-31T19:18:05.167Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "79e0c80f3ee064bb",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.64,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "AGENTS.md",
+          "line": 32,
+          "column": 36,
+          "isOutlier": true,
+          "confidence": 0.77,
+          "outlierReason": "High confidence outlier"
+        },
+        {
+          "file": "AGENTS.md",
+          "line": 38,
+          "column": 7,
+          "isOutlier": true,
+          "confidence": 0.77,
+          "outlierReason": "High confidence outlier"
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3057,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1017,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1024,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1048,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1052,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1060,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1060,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1061,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1063,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1063,
+          "column": 64,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1075,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1088,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1128,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1136,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1150,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1150,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1151,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1153,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1153,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7570,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7571,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7573,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7574,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7871,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7872,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7875,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7877,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7880,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7883,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 76,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.6464705882352941
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.168Z",
+        "lastSeen": "2026-01-31T19:18:05.168Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "79b97ca8e1ab707b",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.22,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8771090047393365,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 77,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 265,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 327,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2644,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2647,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2718,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2721,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3844,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3847,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3998,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4001,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4157,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4323,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5802,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5838,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6290,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6914,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8771090047393365
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 34,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 278,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 281,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 360,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 363,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.169Z",
+        "lastSeen": "2026-01-31T19:18:05.169Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b0ff7716d57d1a84",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.21,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.7233333333333334,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 266,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 522,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 523,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2645,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2648,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2739,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2742,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3845,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3848,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4158,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5803,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6250,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6268,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6283,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6874,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6892,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6907,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.6771090047393364
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 279,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 282,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 176,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7233333333333334
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 120,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7233333333333334
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.169Z",
+        "lastSeen": "2026-01-31T19:18:05.169Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "0c174b8032281310",
+      "subcategory": "log-levels",
+      "name": "Log Levels Detector",
+      "description": "Learns log level patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/log-levels",
+          "patternId": "logging/log-levels/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.26,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.874149377593361,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 77,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 265,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 327,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2644,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2647,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2718,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2721,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3844,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3847,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3998,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4001,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4157,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4323,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5802,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5838,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6290,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6914,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.874149377593361
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 34,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 278,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 281,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 360,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 363,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.865
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.169Z",
+        "lastSeen": "2026-01-31T19:18:05.169Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "log-levels"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "28aa626054b67525",
+      "subcategory": "log-levels",
+      "name": "Log Levels Detector",
+      "description": "Learns log level patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/log-levels",
+          "patternId": "logging/log-levels/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.27,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.7233333333333334,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/launcher.ts",
+          "line": 266,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 522,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 523,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2645,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2648,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2739,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 2742,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3845,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3848,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4158,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5803,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6250,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6268,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6283,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6874,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6892,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 6907,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.6741493775933609
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 279,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "ts-proto-gen/mcp.ts",
+          "line": 282,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "ts-proto-gen/remote.ts",
+          "line": 176,
+          "column": 3,
+          "isOutlier": true,
+          "confidence": 0.7233333333333334,
+          "outlierReason": "High confidence outlier"
+        },
+        {
+          "file": "ts-proto-gen/runner.ts",
+          "line": 120,
+          "column": 3,
+          "isOutlier": true,
+          "confidence": 0.7233333333333334,
+          "outlierReason": "High confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.169Z",
+        "lastSeen": "2026-01-31T19:18:05.169Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "log-levels"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "005e554bac76ffd6",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.6464705882352941,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7936,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.6464705882352941
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7936,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6464705882352941
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7945,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.6464705882352941
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7945,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6464705882352941
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 407,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 407,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.170Z",
+        "lastSeen": "2026-01-31T19:18:05.170Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "context-fields"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "12cda512d3df93d6",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8866666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 411,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.8866666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 415,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.8866666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.170Z",
+        "lastSeen": "2026-01-31T19:18:05.170Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5acfa5df06c4dd42",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8866666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1012,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.8866666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 1070,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.8866666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.170Z",
+        "lastSeen": "2026-01-31T19:18:05.170Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "568979acd535f9a5",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7366666666666666,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7870,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7874,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 7879,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.170Z",
+        "lastSeen": "2026-01-31T19:18:05.170Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f736726f19dac763",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.88,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8464705882352941,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3280,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3281,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3352,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3449,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3449,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3449,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3474,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3475,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3475,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3518,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3518,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3579,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3580,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3645,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3726,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3726,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3726,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3749,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3750,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3750,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3787,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 3787,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4814,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4815,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4883,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4975,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4975,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 4975,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5008,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5009,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5009,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5055,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/manager.ts",
+          "line": 5055,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 204,
+          "column": 17,
+          "isOutlier": true,
+          "confidence": 0.8464705882352941,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 205,
+          "column": 39,
+          "isOutlier": true,
+          "confidence": 0.8464705882352941,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 249,
+          "column": 19,
+          "isOutlier": true,
+          "confidence": 0.8464705882352941,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 274,
+          "column": 7,
+          "isOutlier": true,
+          "confidence": 0.8464705882352941,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 274,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 274,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 290,
+          "column": 17,
+          "isOutlier": true,
+          "confidence": 0.8464705882352941,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 291,
+          "column": 11,
+          "isOutlier": true,
+          "confidence": 0.8464705882352941,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 291,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 309,
+          "column": 13,
+          "isOutlier": true,
+          "confidence": 0.8464705882352941,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "ts-proto-gen/worker.ts",
+          "line": 309,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.8464705882352941
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:18:05.170Z",
+        "lastSeen": "2026-01-31T19:18:05.170Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-01T04:19:55.968Z",
+  "checksum": "5a02d00c9228098f"
+}

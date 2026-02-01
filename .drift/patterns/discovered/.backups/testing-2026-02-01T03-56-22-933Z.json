@@ -1,0 +1,5320 @@
+{
+  "version": "1.0.0",
+  "category": "testing",
+  "patterns": [
+    {
+      "id": "e0369f0193710175",
+      "subcategory": "test-file-naming",
+      "name": "Test File Naming Detector",
+      "description": "Learns test file naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-file-naming",
+          "patternId": "testing/test-file-naming/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 617,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/ISSUE_TEMPLATE/bug.yml",
+          "line": 18,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/feature.yml",
+          "line": 8,
+          "column": 82,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 12,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 41,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 42,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 49,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 16,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 44,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 45,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 66,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 20,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 54,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 55,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 57,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 85,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 86,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 88,
+          "column": 86,
+          "isOutlier": false,
+          "confidence": 0.6241666666666668
+        },
+        {
+          "file": "README.md",
+          "line": 8,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.6241666666666668
+        },
+        {
+          "file": "README.md",
+          "line": 19,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.6241666666666668
+        },
+        {
+          "file": "README.md",
+          "line": 78,
+          "column": 129,
+          "isOutlier": false,
+          "confidence": 0.6241666666666668
+        },
+        {
+          "file": "README.md",
+          "line": 86,
+          "column": 85,
+          "isOutlier": false,
+          "confidence": 0.6241666666666668
+        },
+        {
+          "file": "README.md",
+          "line": 91,
+          "column": 106,
+          "isOutlier": false,
+          "confidence": 0.6241666666666668
+        },
+        {
+          "file": "README.md",
+          "line": 92,
+          "column": 98,
+          "isOutlier": false,
+          "confidence": 0.6241666666666668
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 88,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 143,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 173,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 200,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 230,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_destinations.ts",
+          "line": 54,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_destinations.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_events.ts",
+          "line": 44,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_events.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_notifications.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers.ts",
+          "line": 169,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_deployments.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_events.ts",
+          "line": 76,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_managed-server-templates.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_remote-servers.ts",
+          "line": 76,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_versions.ts",
+          "line": 112,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 54,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 86,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 44,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_notifications.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers.ts",
+          "line": 177,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_deployments.ts",
+          "line": 80,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_events.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_remote-servers.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_versions.ts",
+          "line": 116,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 80,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 107,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 139,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 52,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 79,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 108,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 172,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 94,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 153,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 182,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 214,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 86,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 145,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 174,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-sessions.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 94,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 153,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 182,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 214,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-access.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-auth-factors.ts",
+          "line": 90,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-groups.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-profiles.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-server-requests.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections.ts",
+          "line": 120,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_authentications.ts",
+          "line": 44,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_authentications.ts",
+          "line": 80,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_events.ts",
+          "line": 44,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_events.ts",
+          "line": 80,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_profiles.ts",
+          "line": 44,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_profiles.ts",
+          "line": 80,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_sessions.ts",
+          "line": 114,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_token-exports.ts",
+          "line": 114,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_token-imports.ts",
+          "line": 118,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_token-imports.ts",
+          "line": 147,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_secrets.ts",
+          "line": 74,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-config-vaults.ts",
+          "line": 84,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-run-error-groups.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-run-errors.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-runs.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_deployments.ts",
+          "line": 27,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_deployments.ts",
+          "line": 86,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_deployments_templates.ts",
+          "line": 86,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_implementations.ts",
+          "line": 27,
+          "column": 91,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_implementations.ts",
+          "line": 86,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_implementations.ts",
+          "line": 115,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_implementations.ts",
+          "line": 181,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_variants.ts",
+          "line": 78,
+          "column": 42,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.061Z",
+        "lastSeen": "2026-01-31T19:26:43.061Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "test-file-naming"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "6fc17aedbc5607e3",
+      "subcategory": "test-co-location",
+      "name": "Test Co-Location Detector",
+      "description": "Learns test co-location patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-co-location",
+          "patternId": "testing/test-co-location/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 612,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/ISSUE_TEMPLATE/bug.yml",
+          "line": 18,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/feature.yml",
+          "line": 8,
+          "column": 82,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 12,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 41,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 42,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 49,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 16,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 44,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 45,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 66,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 20,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 54,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 55,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 57,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 85,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 86,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 88,
+          "column": 86,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 88,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 143,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 173,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 200,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 230,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_destinations.ts",
+          "line": 54,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_destinations.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_events.ts",
+          "line": 44,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_events.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_notifications.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers.ts",
+          "line": 169,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_deployments.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_events.ts",
+          "line": 76,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_managed-server-templates.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_remote-servers.ts",
+          "line": 76,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_versions.ts",
+          "line": 112,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 54,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 86,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 44,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_notifications.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers.ts",
+          "line": 177,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_deployments.ts",
+          "line": 80,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_events.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_remote-servers.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_versions.ts",
+          "line": 116,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 80,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 107,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 139,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 52,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 79,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 108,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 172,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 94,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 153,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 182,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 214,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 86,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 145,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 174,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-sessions.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 94,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 153,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 182,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 214,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-access.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-auth-factors.ts",
+          "line": 90,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-groups.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-profiles.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-server-requests.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections.ts",
+          "line": 120,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_authentications.ts",
+          "line": 44,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_authentications.ts",
+          "line": 80,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_events.ts",
+          "line": 44,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_events.ts",
+          "line": 80,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_profiles.ts",
+          "line": 44,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_profiles.ts",
+          "line": 80,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_sessions.ts",
+          "line": 114,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_token-exports.ts",
+          "line": 114,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_token-imports.ts",
+          "line": 118,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_token-imports.ts",
+          "line": 147,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_secrets.ts",
+          "line": 74,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-config-vaults.ts",
+          "line": 84,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-run-error-groups.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-run-errors.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-runs.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_deployments.ts",
+          "line": 27,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_deployments.ts",
+          "line": 86,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_deployments_templates.ts",
+          "line": 86,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_implementations.ts",
+          "line": 27,
+          "column": 91,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_implementations.ts",
+          "line": 86,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_implementations.ts",
+          "line": 115,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_implementations.ts",
+          "line": 181,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_variants.ts",
+          "line": 78,
+          "column": 42,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_versions.ts",
+          "line": 78,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sessions.ts",
+          "line": 80,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sessions_connections.ts",
+          "line": 78,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sessions_events.ts",
+          "line": 44,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sessions_events.ts",
+          "line": 78,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sessions_messages.ts",
+          "line": 44,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.061Z",
+        "lastSeen": "2026-01-31T19:26:43.061Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "test-co-location"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "6e772a4995799b3b",
+      "subcategory": "test-structure",
+      "name": "Test Structure Detector",
+      "description": "Learns test structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-structure",
+          "patternId": "testing/test-structure/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 822,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/ISSUE_TEMPLATE/bug.yml",
+          "line": 26,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6299999999999999
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/bug.yml",
+          "line": 28,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.6299999999999999
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/bug.yml",
+          "line": 18,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.6299999999999999
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/feature.yml",
+          "line": 15,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/feature.yml",
+          "line": 12,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/feature.yml",
+          "line": 8,
+          "column": 82,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 12,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 41,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 42,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 49,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 23,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 28,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 72,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 75,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-deno-runner.yml",
+          "line": 34,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-deno-runner.yml",
+          "line": 37,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 16,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 44,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 45,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 66,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 24,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 86,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 89,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-python-runner.yml",
+          "line": 34,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-python-runner.yml",
+          "line": 37,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 20,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 54,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 55,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 57,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 85,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 86,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 31,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 65,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "AGENTS.md",
+          "line": 27,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 88,
+          "column": 86,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 19,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 20,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 20,
+          "column": 92,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 29,
+          "column": 90,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 43,
+          "column": 85,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 44,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 62,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 87,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 89,
+          "column": 99,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "README.md",
+          "line": 28,
+          "column": 88,
+          "isOutlier": false,
+          "confidence": 0.6766666666666667
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 88,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 143,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 173,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 200,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/api-keys.ts",
+          "line": 230,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_destinations.ts",
+          "line": 54,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_destinations.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_events.ts",
+          "line": 44,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_events.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_notifications.ts",
+          "line": 74,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers.ts",
+          "line": 169,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_deployments.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_events.ts",
+          "line": 76,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_managed-server-templates.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_remote-servers.ts",
+          "line": 76,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/custom-servers_versions.ts",
+          "line": 112,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 54,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 86,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 44,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_notifications.ts",
+          "line": 76,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers.ts",
+          "line": 177,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_deployments.ts",
+          "line": 80,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_events.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_remote-servers.ts",
+          "line": 78,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_custom-servers_versions.ts",
+          "line": 116,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 80,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 107,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 139,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 52,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 79,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 108,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_links.ts",
+          "line": 172,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 94,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 153,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 182,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-groups.ts",
+          "line": 214,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 86,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 145,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-servers.ts",
+          "line": 174,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-sessions.ts",
+          "line": 76,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 94,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 153,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 182,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-tokens.ts",
+          "line": 214,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-access.ts",
+          "line": 84,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-auth-factors.ts",
+          "line": 90,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-groups.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-profiles.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_portals_consumer-server-requests.ts",
+          "line": 88,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections.ts",
+          "line": 120,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_provider-oauth_connections_authentications.ts",
+          "line": 44,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.062Z",
+        "lastSeen": "2026-01-31T19:26:43.062Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "test-structure"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "fe5dd3d71ffd56de",
+      "subcategory": "describe-naming",
+      "name": "Describe Naming Detector",
+      "description": "Learns test describe/it naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/describe-naming",
+          "patternId": "testing/describe-naming/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 207,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/ISSUE_TEMPLATE/feature.yml",
+          "line": 15,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 12,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 41,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 42,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 49,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 16,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 44,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 45,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 66,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 20,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 54,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 55,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 57,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 85,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 86,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "AGENTS.md",
+          "line": 27,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 19,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 20,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 20,
+          "column": 92,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 29,
+          "column": 90,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 43,
+          "column": 85,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 44,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 62,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 87,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 89,
+          "column": 99,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "README.md",
+          "line": 88,
+          "column": 86,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_instance.ts",
+          "line": 13,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/instance.ts",
+          "line": 13,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_instance.ts",
+          "line": 13,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_instance.ts",
+          "line": 13,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/instance.ts",
+          "line": 13,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_instance.ts",
+          "line": 13,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_magic-mcp-sessions.ts",
+          "line": 17,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/servers_capabilities.ts",
+          "line": 15,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/servers_versions.ts",
+          "line": 17,
+          "column": 122,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/sessions_messages.ts",
+          "line": 17,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "scripts/generators/src/fetch.ts",
+          "line": 3,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 35,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 40,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 215,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 352,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 352,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 354,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 357,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 357,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 386,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 386,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 388,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 391,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/endpoint.ts",
+          "line": 391,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5583720930232559
+        },
+        {
+          "file": "scripts/generators/src/languages/python/mapper.ts",
+          "line": 82,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "scripts/generators/src/languages/python/mapper.ts",
+          "line": 91,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "scripts/generators/src/languages/python/mapper.ts",
+          "line": 101,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "scripts/generators/src/languages/python/mapper.ts",
+          "line": 113,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "scripts/generators/src/languages/python/mapper.ts",
+          "line": 141,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "scripts/generators/src/languages/python/mapper.ts",
+          "line": 141,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.103Z",
+        "lastSeen": "2026-01-31T19:26:43.103Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "describe-naming"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "7a19ea32d9880299",
+      "subcategory": "setup-teardown",
+      "name": "Setup/Teardown Detector",
+      "description": "Learns test setup/teardown patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/setup-teardown",
+          "patternId": "testing/setup-teardown/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 34,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 23,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 28,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 72,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-api.yml",
+          "line": 75,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-deno-runner.yml",
+          "line": 34,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-deno-runner.yml",
+          "line": 37,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 24,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 86,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-engine.yml",
+          "line": 89,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-python-runner.yml",
+          "line": 34,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-python-runner.yml",
+          "line": 37,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 31,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/test.yml",
+          "line": 65,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 28,
+          "column": 88,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sso-tenants.ts",
+          "line": 142,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sso-tenants.ts",
+          "line": 143,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_sso-tenants.ts",
+          "line": 142,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_sso-tenants.ts",
+          "line": 143,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/sso-tenants.ts",
+          "line": 136,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/sso-tenants.ts",
+          "line": 137,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_sso-tenants.ts",
+          "line": 142,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_sso-tenants.ts",
+          "line": 143,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_sso-tenants.ts",
+          "line": 142,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_sso-tenants.ts",
+          "line": 143,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/sso-tenants.ts",
+          "line": 136,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/sso-tenants.ts",
+          "line": 137,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sso-tenants.ts",
+          "line": 142,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_sso-tenants.ts",
+          "line": 143,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_sso-tenants.ts",
+          "line": 142,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_sso-tenants.ts",
+          "line": 143,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/sso-tenants.ts",
+          "line": 136,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/sso-tenants.ts",
+          "line": 137,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_sso-tenants.ts",
+          "line": 142,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_sso-tenants.ts",
+          "line": 143,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_sso-tenants.ts",
+          "line": 142,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_sso-tenants.ts",
+          "line": 143,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/sso-tenants.ts",
+          "line": 136,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/sso-tenants.ts",
+          "line": 137,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/auth/pages/login.tsx",
+          "line": 30,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/auth/pages/login.tsx",
+          "line": 63,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/auth/pages/signup.tsx",
+          "line": 37,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/auth/pages/signup.tsx",
+          "line": 84,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/join/pages/orgInvite.tsx",
+          "line": 28,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/join/pages/orgInvite.tsx",
+          "line": 87,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/product/pages/(portals)/portal/settings/auth.tsx",
+          "line": 54,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6824999999999999
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/product/pages/(portals)/portal/settings/auth.tsx",
+          "line": 70,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.6824999999999999
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/product/pages/(portals)/portal/settings/auth.tsx",
+          "line": 85,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.6824999999999999
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/product/pages/deploy.tsx",
+          "line": 19,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/product/pages/deploy.tsx",
+          "line": 47,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/welcome/pages/createOrganization.tsx",
+          "line": 7,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/welcome/pages/createOrganization.tsx",
+          "line": 15,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/welcome/pages/createProject.tsx",
+          "line": 7,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/welcome/pages/createProject.tsx",
+          "line": 15,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/welcome/pages/jumpstart.tsx",
+          "line": 51,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/welcome/pages/jumpstart.tsx",
+          "line": 59,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/welcome/pages/setupProject.tsx",
+          "line": 7,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "src/frontend/apps/dashboard/src/slices/welcome/pages/setupProject.tsx",
+          "line": 15,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 22,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 22,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 49,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 49,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 135,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 160,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 160,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 168,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/internal/controllers/tenant.ts",
+          "line": 58,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "src/services/sso/src/pages/setup-complete.ts",
+          "line": 32,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "src/services/sso/src/pages/setup-complete.ts",
+          "line": 321,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "src/services/sso/src/pages/setup-configure.ts",
+          "line": 397,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "src/services/sso/src/pages/setup-select.ts",
+          "line": 116,
+          "column": 74,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "src/services/sso/src/presenters/setup.ts",
+          "line": 7,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "src/services/sso/src/presenters/setup.ts",
+          "line": 9,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "src/services/sso/src/presenters/setup.ts",
+          "line": 11,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "src/services/sso/src/presenters/setup.ts",
+          "line": 12,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "src/services/sso/src/presenters/setup.ts",
+          "line": 14,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "src/services/sso/src/presenters/setup.ts",
+          "line": 15,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "src/services/sso/src/presenters/setup.ts",
+          "line": 19,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "src/services/sso/src/presenters/setup.ts",
+          "line": 20,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "src/services/sso/src/services/setup.ts",
+          "line": 26,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "src/services/sso/src/services/setup.ts",
+          "line": 27,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "src/services/sso/src/services/setup.ts",
+          "line": 28,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "src/services/sso/src/services/setup.ts",
+          "line": 31,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "src/services/sso/src/services/setup.ts",
+          "line": 51,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "src/services/sso/src/services/setup.ts",
+          "line": 96,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "src/services/sso/src/services/setup.ts",
+          "line": 104,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.116Z",
+        "lastSeen": "2026-01-31T19:26:43.116Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "setup-teardown"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "cd400140f087be7c",
+      "subcategory": "fixture-patterns",
+      "name": "Fixture Patterns Detector",
+      "description": "Learns test fixture patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/fixture-patterns",
+          "patternId": "testing/fixture-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 388,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "AGENTS.md",
+          "line": 37,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "AGENTS.md",
+          "line": 43,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "README.md",
+          "line": 9,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 19,
+          "column": 141,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 26,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 27,
+          "column": 124,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 43,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 43,
+          "column": 175,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 44,
+          "column": 101,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 62,
+          "column": 93,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_dashboard/endpoints/servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_instance.ts",
+          "line": 13,
+          "column": 109,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/instance.ts",
+          "line": 13,
+          "column": 109,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_instance.ts",
+          "line": 13,
+          "column": 109,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-consumer/src/gen/src/mt_2025_01_01_pulsar/endpoints/servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/auth.ts",
+          "line": 12,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "clients/metorial-dashboard/src/auth.ts",
+          "line": 13,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "clients/metorial-dashboard/src/auth.ts",
+          "line": 24,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "clients/metorial-dashboard/src/auth.ts",
+          "line": 25,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "clients/metorial-dashboard/src/auth.ts",
+          "line": 26,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/dashboard_instance_servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/management_instance_servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_dashboard/endpoints/servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_instance.ts",
+          "line": 13,
+          "column": 109,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/dashboard_instance_servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/instance.ts",
+          "line": 13,
+          "column": 109,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_callbacks_destinations.ts",
+          "line": 27,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_callbacks_events.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_callbacks_notifications.ts",
+          "line": 17,
+          "column": 218,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_files.ts",
+          "line": 23,
+          "column": 206,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_instance.ts",
+          "line": 13,
+          "column": 109,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/management_instance_servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/server-config-vaults.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "clients/metorial-dashboard/src/gen/src/mt_2025_01_01_pulsar/endpoints/servers_deployments_templates.ts",
+          "line": 25,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "deployment/compose/metorial.docker-compose.yml",
+          "line": 16,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "deployment/compose/metorial.docker-compose.yml",
+          "line": 27,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "deployment/compose/metorial.docker-compose.yml",
+          "line": 45,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "deployment/compose/metorial.docker-compose.yml",
+          "line": 58,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "deployment/compose/metorial.docker-compose.yml",
+          "line": 62,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "deployment/compose/metorial.docker-compose.yml",
+          "line": 82,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "scripts/dev-tools/services.docker-compose.yml",
+          "line": 16,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.131Z",
+        "lastSeen": "2026-01-31T19:26:43.131Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "fixture-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "e05bde2fbcb70630",
+      "subcategory": "mock-patterns",
+      "name": "Mock Patterns Detector",
+      "description": "Learns mocking patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/mock-patterns",
+          "patternId": "testing/mock-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 86,
+        "score": 0.7364383561643835,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 153,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 154,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 155,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 160,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 170,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 171,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 172,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 176,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 185,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 192,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 203,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 239,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 240,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 250,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 251,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 266,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 267,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 277,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 290,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 313,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 339,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 340,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 341,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 342,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 343,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 348,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 358,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 359,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 360,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 361,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 362,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 366,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 382,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 393,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 424,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 437,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 438,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 448,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 449,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 450,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 451,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 490,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 498,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 503,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 504,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 505,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 518,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 520,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 521,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 522,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 531,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 541,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 543,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 567,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 569,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 593,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 659,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 677,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 721,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 727,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 728,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 736,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 750,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 751,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/access.test.ts",
+          "line": 752,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.5956756756756756
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 52,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 53,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 59,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 64,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 65,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 71,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 80,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 81,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 86,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 92,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 98,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 106,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 118,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 119,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 125,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 130,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 131,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 146,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 176,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 181,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 186,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 193,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 204,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 221,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 235,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 239,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 240,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 241,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 246,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 252,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 257,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 258,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 262,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 263,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        },
+        {
+          "file": "src/backend/modules/access/test/authentication.test.ts",
+          "line": 264,
+          "column": 56,
+          "isOutlier": false,
+          "confidence": 0.5608163265306123
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.251Z",
+        "lastSeen": "2026-01-31T19:26:43.251Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "mock-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "df436366c1b3bccc",
+      "subcategory": "mock-patterns",
+      "name": "Mock Patterns Detector",
+      "description": "Learns mocking patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/mock-patterns",
+          "patternId": "testing/mock-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.24,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8284639498432602,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 70,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 71,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 98,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 114,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 144,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 145,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 162,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 163,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 184,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/custom-server/test/syncCurrentDraftBucketToRepo.test.ts",
+          "line": 185,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.7620289855072464
+        },
+        {
+          "file": "src/backend/modules/provider-oauth/test/errorCheck.test.ts",
+          "line": 254,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.8284639498432602
+        },
+        {
+          "file": "src/backend/modules/session/test/cron.test.ts",
+          "line": 226,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8066666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.252Z",
+        "lastSeen": "2026-01-31T19:26:43.252Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "mock-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "37b52d5e08e94b89",
+      "subcategory": "mock-patterns",
+      "name": "Mock Patterns Detector",
+      "description": "Learns mocking patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/mock-patterns",
+          "patternId": "testing/mock-patterns/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8972727272727272,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/backend/modules/secret/test/fingerprint.test.ts",
+          "line": 6,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8972727272727272
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.253Z",
+        "lastSeen": "2026-01-31T19:26:43.253Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "mock-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "8fae03a7fc0efcc9",
+      "subcategory": "fixture-patterns",
+      "name": "Fixture Patterns Detector",
+      "description": "Learns test fixture patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/fixture-patterns",
+          "patternId": "testing/fixture-patterns/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8866666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/backend/modules/secret/test/fingerprint.test.ts",
+          "line": 6,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8866666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.253Z",
+        "lastSeen": "2026-01-31T19:26:43.253Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "fixture-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c2fdd923f16a33b6",
+      "subcategory": "setup-teardown",
+      "name": "Setup/Teardown Detector",
+      "description": "Learns test setup/teardown patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/setup-teardown",
+          "patternId": "testing/setup-teardown/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.7833333333333333,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 24,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 51,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "src/services/sso/src/api/setup.ts",
+          "line": 164,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "src/services/sso/src/services/setup.ts",
+          "line": 55,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7833333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T19:26:43.254Z",
+        "lastSeen": "2026-01-31T19:26:43.254Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "setup-teardown"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-01T03:56:22.878Z",
+  "checksum": "c4915486caa0aad4"
+}
