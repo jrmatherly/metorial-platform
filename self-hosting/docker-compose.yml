@@ -48,6 +48,7 @@ services:
       - meilisearch_data:/meili_data
     environment:
       - MEILI_ENV=development
+      - MEILI_MASTER_KEY=${MEILISEARCH_API_KEY:-metorial-dev-master-key-min16}
     restart: unless-stopped
 
   postgres-db:
@@ -121,8 +122,8 @@ services:
       - EMAIL_SECURE=${EMAIL_SECURE}
       - EMAIL_USER=${EMAIL_USER}
       - EMAIL_PASS=${EMAIL_PASS}
-      - EMAIL_FROM=${EMAIL_FROM}
-      - EMAIL_FROM_NAME=${EMAIL_FROM_NAME}
+      - EMAIL_FROM=${EMAIL_FROM:-noreply@localhost}
+      - EMAIL_FROM_NAME=${EMAIL_FROM_NAME:-Metorial}
       - DATABASE_URL=postgresql://postgres:postgres@postgres-db:5432/postgres
       - REDIS_URL=redis://:@redis-db:6379/0
       - USAGE_MONGO_URL=mongodb://mongo:mongo@mongodb:27017
@@ -130,6 +131,14 @@ services:
       - OPENSEARCH_HOST=http://opensearch:9200
       - OPENSEARCH_USERNAME=admin
       - OPENSEARCH_PASSWORD=admin
+      - MEILISEARCH_HOST=http://meilisearch:7700
+      - MEILISEARCH_API_KEY=${MEILISEARCH_API_KEY:-metorial-dev-master-key-min16}
+      # S3/MinIO Configuration
+      - S3_ENDPOINT=http://minio:9000
+      - S3_ACCESS_KEY_ID=minio
+      - S3_SECRET_ACCESS_KEY=minio123
+      - S3_REGION=us-east-1
+      - S3_BUCKET=metorial
       - PROVIDER_OAUTH_TICKET_SECRET=${SECRET}
       - AUTH_TICKET_SECRET=${SECRET}
       - ENCRYPTION_SECRET=${SECRET}
@@ -173,11 +182,13 @@ services:
     depends_on:
       - postgres-db
       - redis-db
+      - etcd
     environment:
       - REDIS_ENDPOINTS=redis://:@redis-db:6379
       - ENGINE_DATABASE_DSN=host=postgres-db user=postgres password=postgres dbname=engine port=5432 sslmode=disable
       - ENGINE_MANAGER_ADDRESSES=localhost:50050
       - ENABLE_RESOURCE_CHECK=false
+      - ETCD_ENDPOINTS=http://etcd:2379
     volumes:
       # Docker socket for spawning MCP server containers
       - /var/run/docker.sock:/var/run/docker.sock
