@@ -34,13 +34,14 @@ ENV NODE_OPTIONS=--max_old_space_size=6144
 
 RUN bun install
 
-RUN apt-get update && apt-get install -y ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates && rm -rf /var/lib/apt/lists/*
 
-# Generate Prisma clients and build dependencies first
-RUN bun turbo run prisma:generate --concurrency=1 --log-prefix=task
+# Generate Prisma clients for the filtered package tree only
+RUN bun turbo run prisma:generate --filter=${PACKAGE_NAME}... --concurrency=1 --log-prefix=task
 
-# Build the frontend application
-RUN bun turbo run build --concurrency=1 --log-prefix=task
+# Build only the frontend app and its dependencies (not entire monorepo)
+# The "..." suffix means "this package and all packages it depends on"
+RUN bun turbo run build --filter=${PACKAGE_NAME}... --concurrency=1 --log-prefix=task
 
 RUN bun turbo run frontend:build --filter=${PACKAGE_NAME} --concurrency=1 --log-prefix=task
 
@@ -52,40 +53,44 @@ FROM bun_base AS server_setup
 WORKDIR /app
 
 # Create a simple server package.json
-RUN echo '{\n\
-  "name": "frontend-server",\n\
-  "version": "1.0.0",\n\
-  "type": "module",\n\
-  "dependencies": {\n\
-  "express": "^4.18.2"\n\
-  }\n\
-  }' > package.json
+RUN cat <<'EOF' > package.json
+{
+  "name": "frontend-server",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+EOF
 
 RUN bun install
 
 # Create the server file
-RUN echo 'import express from "express";\n\
-  import { fileURLToPath } from "url";\n\
-  import { dirname, join } from "path";\n\
-  \n\
-  const __filename = fileURLToPath(import.meta.url);\n\
-  const __dirname = dirname(__filename);\n\
-  \n\
-  const app = express();\n\
-  const PORT = process.env.PORT || 3300;\n\
-  const distPath = join(__dirname, "dist");\n\
-  \n\
-  // Serve static files from dist directory\n\
-  app.use(express.static(distPath));\n\
-  \n\
-  // Catch-all route to serve index.html for client-side routing\n\
-  app.get("*", (req, res) => {\n\
-  res.sendFile(join(distPath, "index.html"));\n\
-  });\n\
-  \n\
-  app.listen(PORT, "0.0.0.0", () => {\n\
-  console.log(`Frontend server running on port ${PORT}`);\n\
-  });' > server.js
+RUN cat <<'EOF' > server.js
+import express from "express";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const app = express();
+const PORT = process.env.PORT || 3300;
+const distPath = join(__dirname, "dist");
+
+// Serve static files from dist directory
+app.use(express.static(distPath));
+
+// Catch-all route to serve index.html for client-side routing
+app.get("*", (req, res) => {
+  res.sendFile(join(distPath, "index.html"));
+});
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Frontend server running on port ${PORT}`);
+});
+EOF
 
 # ------------------------
 # RUNNER
@@ -105,7 +110,7 @@ ENV PACKAGE_NAME=${PACKAGE_NAME}
 ENV PORT=3300
 EXPOSE 3300
 
-RUN apt-get update && apt-get install -y curl wget ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends curl wget ca-certificates && rm -rf /var/lib/apt/lists/*
 
 # Copy the built frontend files from builder
 COPY --from=builder "/app/${PACKAGE_DIRECTORY}/dist" ./dist

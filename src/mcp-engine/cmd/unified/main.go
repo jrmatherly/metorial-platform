@@ -32,16 +32,26 @@ func main() {
 		// ignore error if .env file is not found
 	}
 
-	managerAddress := "localhost:50050"
+	// Listen address - bind to all interfaces for container networking
+	listenAddress := os.Getenv("ENGINE_LISTEN_ADDRESS")
+	if listenAddress == "" {
+		listenAddress = ":50050"
+	}
+
+	// Advertise address - what other services use to connect (Docker service name)
+	advertiseAddress := os.Getenv("ENGINE_ADVERTISE_ADDRESS")
+	if advertiseAddress == "" {
+		advertiseAddress = "localhost:50050" // default for local dev
+	}
 
 	stateConfig, dsn := getConfig()
 
-	go runManager(managerAddress, stateConfig, dsn)
+	go runManager(listenAddress, advertiseAddress, stateConfig, dsn)
 
 	timer := time.NewTimer(1 * time.Second)
 	<-timer.C
 
-	go runRunner(managerAddress)
+	go runRunner(listenAddress)
 
 	go runLauncher()
 	go runRemote()
@@ -54,18 +64,31 @@ func main() {
 	<-sigChan
 }
 
-func runManager(address string, stateConfig state.Config, dsn string) {
+func runManager(listenAddress, advertiseAddress string, stateConfig state.Config, dsn string) {
 	db, error := db.NewDB(dsn)
 	if error != nil {
 		log.Fatalf("Failed to connect to database: %v", error)
 	}
 
-	standaloneWorkers := []manager.StandaloneWorker{
-		{Type: workers.WorkerTypeLauncher, Address: "localhost:50052"},
-		{Type: workers.WorkerTypeRemote, Address: "localhost:50053"},
+	// Get standalone worker advertise addresses from env or derive from advertise address
+	launcherAddr := os.Getenv("ENGINE_LAUNCHER_ADDRESS")
+	if launcherAddr == "" {
+		// Use same host as manager advertise, different port
+		host := strings.Split(advertiseAddress, ":")[0]
+		launcherAddr = host + ":50052"
+	}
+	remoteAddr := os.Getenv("ENGINE_REMOTE_ADDRESS")
+	if remoteAddr == "" {
+		host := strings.Split(advertiseAddress, ":")[0]
+		remoteAddr = host + ":50053"
 	}
 
-	manager, err := manager.NewManager(db, stateConfig, address, address, standaloneWorkers)
+	standaloneWorkers := []manager.StandaloneWorker{
+		{Type: workers.WorkerTypeLauncher, Address: launcherAddr},
+		{Type: workers.WorkerTypeRemote, Address: remoteAddr},
+	}
+
+	manager, err := manager.NewManager(db, stateConfig, listenAddress, advertiseAddress, standaloneWorkers)
 	if err != nil {
 		log.Fatalf("Failed to create manager: %v", err)
 	}
@@ -76,7 +99,7 @@ func runManager(address string, stateConfig state.Config, dsn string) {
 		}
 	}()
 
-	log.Printf("MCP Manager is running at %s", address)
+	log.Printf("MCP Manager listening at %s, advertising as %s", listenAddress, advertiseAddress)
 
 	// Wait for interrupt signal
 	sigChan := make(chan os.Signal, 1)

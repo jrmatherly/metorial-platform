@@ -1,4 +1,6 @@
-bin
+# Compiled binaries
+bin/
+/unified
 
 # =============================================================================
 # DRIFT - Codebase Intelligence

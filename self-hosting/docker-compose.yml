@@ -29,8 +29,8 @@ services:
       - mongodb_data:/data/db
     restart: unless-stopped
     environment:
-      MONGO_INITDB_ROOT_USERNAME: mongo
-      MONGO_INITDB_ROOT_PASSWORD: mongo
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER:-mongo}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:-mongo}
 
   redis-db:
     image: redis:latest
@@ -59,11 +59,11 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./init-db:/docker-entrypoint-initdb.d:ro
     environment:
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
     command: postgres -c 'max_connections=1000'
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
       interval: 5s
       timeout: 5s
       retries: 5
@@ -72,13 +72,13 @@ services:
   minio:
     image: minio/minio:latest
     ports:
-      - "9000:9000"
-      - "9001:9001"  # MinIO Console
+      - '9000:9000'
+      - '9001:9001' # MinIO Console
     volumes:
       - minio_data:/data
     environment:
-      MINIO_ROOT_USER: minio
-      MINIO_ROOT_PASSWORD: minio123
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY_ID:-minio}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_ACCESS_KEY:-minio123}
     command: server --console-address ":9001" /data
     restart: unless-stopped
 
@@ -86,15 +86,15 @@ services:
     image: opensearchproject/opensearch:2.18.0
     environment:
       - discovery.type=single-node
-      - bootstrap.memory_lock=false  # Changed from true to avoid ulimit issues
-      - DISABLE_SECURITY_PLUGIN=true   # disable SSL & auth
-      - "OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m"
+      - bootstrap.memory_lock=false # Changed from true to avoid ulimit issues
+      - DISABLE_SECURITY_PLUGIN=true # disable SSL & auth
+      - 'OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m'
       - OPENSEARCH_USERNAME=admin
       - OPENSEARCH_PASSWORD=admin
     # Removed ulimits as they can cause permission issues on some systems
     ports:
-      - "9200:9200"
-      - "9600:9600"  # Performance analyzer
+      - '9200:9200'
+      - '9600:9600' # Performance analyzer
     volumes:
       - opensearch_data:/usr/share/opensearch/data
     restart: unless-stopped
@@ -102,12 +102,12 @@ services:
   opensearch-dashboards:
     image: opensearchproject/opensearch-dashboards:2.18.0
     ports:
-      - "5601:5601"
+      - '5601:5601'
     environment:
       - OPENSEARCH_HOSTS=http://opensearch:9200
       - OPENSEARCH_USERNAME=admin
       - OPENSEARCH_PASSWORD=admin
-      - DISABLE_SECURITY_DASHBOARDS_PLUGIN=true   # disable SSL & auth
+      - DISABLE_SECURITY_DASHBOARDS_PLUGIN=true # disable SSL & auth
     depends_on:
       - opensearch
     restart: unless-stopped
@@ -117,41 +117,55 @@ services:
     # Or use remote: ghcr.io/metorial/metorial-api:dev
     image: ${METORIAL_API_IMAGE:-metorial-api:local}
     environment:
-      - EMAIL_HOST=${EMAIL_HOST}
-      - EMAIL_PORT=${EMAIL_PORT}
-      - EMAIL_SECURE=${EMAIL_SECURE}
-      - EMAIL_USER=${EMAIL_USER}
-      - EMAIL_PASS=${EMAIL_PASS}
+      # Email Configuration
+      - EMAIL_HOST=${EMAIL_HOST:-}
+      - EMAIL_PORT=${EMAIL_PORT:-}
+      - EMAIL_SECURE=${EMAIL_SECURE:-}
+      - EMAIL_USER=${EMAIL_USER:-}
+      - EMAIL_PASS=${EMAIL_PASS:-}
       - EMAIL_FROM=${EMAIL_FROM:-noreply@localhost}
       - EMAIL_FROM_NAME=${EMAIL_FROM_NAME:-Metorial}
-      - DATABASE_URL=postgresql://postgres:postgres@postgres-db:5432/postgres
-      - REDIS_URL=redis://:@redis-db:6379/0
-      - USAGE_MONGO_URL=mongodb://mongo:mongo@mongodb:27017
+      # Database Configuration
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres-db:5432/${POSTGRES_DB:-postgres}
+      - REDIS_URL=redis://:@${REDIS_HOST:-redis-db}:${REDIS_PORT:-6379}/0
+      - USAGE_MONGO_URL=mongodb://${MONGO_USER:-mongo}:${MONGO_PASSWORD:-mongo}@mongodb:27017
       - CODE_WORKSPACE_SERVICE_ADDRESS=http://code-workspace:3000
+      # Search Configuration
       - OPENSEARCH_HOST=http://opensearch:9200
       - OPENSEARCH_USERNAME=admin
       - OPENSEARCH_PASSWORD=admin
       - MEILISEARCH_HOST=http://meilisearch:7700
       - MEILISEARCH_API_KEY=${MEILISEARCH_API_KEY:-metorial-dev-master-key-min16}
       # S3/MinIO Configuration
-      - S3_ENDPOINT=http://minio:9000
-      - S3_ACCESS_KEY_ID=minio
-      - S3_SECRET_ACCESS_KEY=minio123
-      - S3_REGION=us-east-1
-      - S3_BUCKET=metorial
+      - S3_ENDPOINT=${S3_ENDPOINT:-http://minio:9000}
+      - S3_ACCESS_KEY_ID=${S3_ACCESS_KEY_ID:-minio}
+      - S3_SECRET_ACCESS_KEY=${S3_SECRET_ACCESS_KEY:-minio123}
+      - S3_REGION=${S3_REGION:-us-east-1}
+      - S3_BUCKET=${S3_BUCKET:-metorial}
+      # Authentication Secrets
       - PROVIDER_OAUTH_TICKET_SECRET=${SECRET}
       - AUTH_TICKET_SECRET=${SECRET}
       - ENCRYPTION_SECRET=${SECRET}
-      - API_URL=${HOST}:4310
-      - APP_URL=${HOST}:4300
-      - MCP_URL=${HOST}:4311
-      - PROVIDER_OAUTH_URL=${HOST}:4313
-      - PORTALS_URL=${HOST}:4315
-      - INTEGRATIONS_API_URL=${HOST}:4316
-      - DENO_DEPLOY_TOKEN=placeholder
-      - DENO_ORGANIZATION_ID=placeholder
-      - SCM_GITHUB_CLIENT_ID=placeholder
-      - SCM_GITHUB_CLIENT_SECRET=placeholder
+      - CONSUMER_TOKEN_SECRET=${CONSUMER_TOKEN_SECRET}
+      - CONSUMER_SESSION_SECRET=${CONSUMER_SESSION_SECRET}
+      # URLs Configuration
+      - API_URL=${HOST:-http://localhost}:4310
+      - APP_URL=${HOST:-http://localhost}:4300
+      - MCP_URL=${HOST:-http://localhost}:4311
+      - PROVIDER_OAUTH_URL=${HOST:-http://localhost}:4313
+      - PORTALS_URL=${HOST:-http://localhost}:4315
+      - INTEGRATIONS_API_URL=${HOST:-http://localhost}:4316
+      - CALLBACKS_URL=${HOST:-http://localhost}:4310
+      # Portal Configuration (must include {portalId} placeholder)
+      - PORTAL_HOST_TEMPLATE=${PORTAL_HOST_TEMPLATE:-http://localhost:4315/{portalId}}
+      # SSO Configuration
+      - SSO_SERVICE_RPC_URL=${SSO_SERVICE_RPC_URL:-http://localhost:4320}
+      # Optional Integrations (use placeholder if not configured)
+      - DENO_DEPLOY_TOKEN=${DENO_DEPLOY_TOKEN:-placeholder}
+      - DENO_ORGANIZATION_ID=${DENO_ORGANIZATION_ID:-placeholder}
+      - SCM_GITHUB_CLIENT_ID=${SCM_GITHUB_CLIENT_ID:-placeholder}
+      - SCM_GITHUB_CLIENT_SECRET=${SCM_GITHUB_CLIENT_SECRET:-placeholder}
+      # Runtime Configuration
       - METORIAL_ENV=production
       - NODE_ENV=production
       - ENGINE_MANAGER_ADDRESSES=engine:50050
@@ -184,9 +198,13 @@ services:
       - redis-db
       - etcd
     environment:
-      - REDIS_ENDPOINTS=redis://:@redis-db:6379
-      - ENGINE_DATABASE_DSN=host=postgres-db user=postgres password=postgres dbname=engine port=5432 sslmode=disable
-      - ENGINE_MANAGER_ADDRESSES=localhost:50050
+      - REDIS_ENDPOINTS=${REDIS_HOST:-redis-db}:${REDIS_PORT:-6379}
+      - ENGINE_DATABASE_DSN=host=postgres-db user=${POSTGRES_USER:-postgres} password=${POSTGRES_PASSWORD:-postgres} dbname=engine port=5432 sslmode=disable
+      # Listen on all interfaces, advertise Docker service name for cross-container connectivity
+      - ENGINE_LISTEN_ADDRESS=:50050
+      - ENGINE_ADVERTISE_ADDRESS=engine:50050
+      - ENGINE_LAUNCHER_ADDRESS=engine:50052
+      - ENGINE_REMOTE_ADDRESS=engine:50053
       - ENABLE_RESOURCE_CHECK=false
       - ETCD_ENDPOINTS=http://etcd:2379
     volumes:

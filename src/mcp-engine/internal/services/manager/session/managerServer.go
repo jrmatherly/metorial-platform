@@ -129,9 +129,11 @@ func (s *SessionServer) ListManagers(context.Context, *managerPb.ListManagersReq
 
 	resManagers := make([]*managerPb.Manager, 0, len(managers))
 	for _, manager := range managers {
+		// Return WorkerBrokerAddress (advertise address) for external clients
+		// ManagerAddress is the listen address which may not be reachable from other containers
 		resManagers = append(resManagers, &managerPb.Manager{
 			Id:      manager.ID,
-			Address: manager.ManagerAddress,
+			Address: manager.WorkerBrokerAddress,
 		})
 	}
 
