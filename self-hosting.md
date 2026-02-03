@@ -129,8 +129,8 @@ Once all services are running, verify the installation:
 docker compose -f ./deployment/compose/metorial.docker-compose.yml ps
 ```
 
-2. Access the dashboard at `http://localhost:4300`
-3. Check API health at `http://localhost:4310/health`
+1. Access the dashboard at `http://localhost:4300`
+2. Check API health at `http://localhost:4310/health`
 
 ### Stop Services
 
@@ -181,6 +181,19 @@ If you have conflicts with the default ports, modify the port mappings in `metor
 ### Resource Constraints
 
 Increase Docker's memory allocation if services crash or perform poorly. The stack requires at least 8GB of RAM to run comfortably.
+
+### Frontend Shows Blank Page / "CORE_API_URL is not defined"
+
+The frontend uses Vite, which bakes environment variables into the JavaScript bundle **at build time**. If you see this error:
+
+1. Ensure your `self-hosting/.env` file has the correct `HOST` value
+2. Rebuild the frontend image to bake in the new configuration:
+   ```bash
+   mise run selfhost:build-frontend
+   mise run selfhost:up
+   ```
+
+**Important**: Changing `HOST` in `.env` requires rebuilding the frontend - runtime environment variables in docker-compose.yml do not affect the already-built JavaScript bundle.
 
 ## Production Considerations
 

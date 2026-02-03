@@ -212,6 +212,30 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
 
+  frontend:
+    # Use local build: 'mise run selfhost:build-frontend' then change to 'metorial-frontend:local'
+    # Or use remote: ghcr.io/metorial/metorial-frontend:dev
+    image: ${METORIAL_FRONTEND_IMAGE:-metorial-frontend:local}
+    ports:
+      - '4300:3300'
+    depends_on:
+      - api
+    environment:
+      - PORT=3300
+      - NODE_ENV=production
+      - METORIAL_ENV=production
+      - VITE_METORIAL_ENV=production
+      - VITE_MCP_API_URL=${HOST:-http://localhost}:4311
+      - VITE_CORE_API_URL=${HOST:-http://localhost}:4310
+      - VITE_PRIVATE_API_URL=${HOST:-http://localhost}:4314
+      - VITE_MARKETPLACE_API_URL=${HOST:-http://localhost}:4312
+      - VITE_DASHBOARD_FRONTEND_URL=${HOST:-http://localhost}:4300
+      - VITE_PUBLIC_API_URL=${HOST:-http://localhost}:4310
+      - VITE_EXPLORER_URL=${EXPLORER_URL:-https://explorer.metorial.com}
+      - VITE_DOCS_FRONTEND_URL=${DOCS_URL:-https://metorial.com/docs}
+      - VITE_API_DOCS_FRONTEND_URL=${API_DOCS_URL:-https://metorial.com/api}
+    restart: unless-stopped
+
 volumes:
   mongodb_data:
   redis_data:
