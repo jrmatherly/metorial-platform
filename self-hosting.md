@@ -125,12 +125,28 @@ This process may take 5-10 minutes depending on your system.
 Once all services are running, verify the installation:
 
 1. Check service health:
-```bash
-docker compose -f ./deployment/compose/metorial.docker-compose.yml ps
-```
+   ```bash
+   docker compose -f ./deployment/compose/metorial.docker-compose.yml ps
+   ```
+2. Access the dashboard at `http://localhost:4300`
+3. Check API health at `http://localhost:4310/health`
 
-1. Access the dashboard at `http://localhost:4300`
-2. Check API health at `http://localhost:4310/health`
+### First Login
+
+Metorial uses self-registration authentication. There are **no default credentials** - you create the first account yourself.
+
+1. Open `http://localhost:4300` in your browser
+2. Click **"Sign up"** to create a new account
+3. Enter your details:
+   - **Name**: Your display name
+   - **Email**: Your email address (must be unique)
+   - **Password**: Minimum 8 characters
+4. Click **"Create Account"**
+5. You'll be automatically logged in and redirected to the dashboard
+
+The first user you create becomes the first user of the system. Each user gets their own organization and workspace automatically.
+
+**Note**: These are application credentials, separate from infrastructure service credentials (PostgreSQL, MongoDB, etc.) listed in the port mappings section.
 
 ### Stop Services
 
